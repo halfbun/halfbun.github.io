@@ -3,13 +3,21 @@ html {
   scroll-behavior: auto;
 }
 
+/* :root {
+  --mainColor: #1a1a1a; 
+  --secondaryColor: #610000; 
+  --thirdColor: #333333; 
+  --fifthColor: #720000; 
+  --accent: #c00000; 
+  --fourthColor: #fafafa;
+  --fontblack: #313131; 
+} */
 /* variable warna */
 :root {
   --mainColor: #1a1a1a; /*bg1*/
-  --secondaryColor: #610000; /*bg2*/
-  --thirdColor: #333333; /*card*/
-  --fifthColor: #720000; /*sidebar*/
-  --accent: #c00000; /*accent*/
+  --secondaryColor: #f5b62e; /*bg2*/
+  --thirdColor: #afafaf8c; /*card*/
+  --accent: #97a800; /*accent*/
   --fourthColor: #fafafa; /*whitesection*/
   --fontblack: #313131; /*font hitam*/
 }
@@ -52,7 +60,7 @@ footer {
   font-weight: 700;
 }
 .nav-link:hover {
-  color: var(--mainColor) !important;
+  color: var(--secondaryColor) !important;
   font-weight: 700;
 }
 
@@ -180,7 +188,7 @@ footer {
 
 #home:after {
   content: "";
-  background: url("../img/bg/background.jpg") center;
+  background: url("../img/bg/bg-1.png") center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -276,7 +284,7 @@ hr {
 
 /* Skill Section */
 #skill {
-  background: url("../img/bg/bg2.jpg") center;
+  background: url("../img/bg/bg-2.jpg") center;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 60px;
@@ -596,7 +604,7 @@ h5 {
 }
 
 #footer a {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--fourthColor);
 }
 
@@ -748,12 +756,6 @@ footer.active {
 #nav-icon4 span:hover {
   background-color: var(--accent);
 }
-
-/* #nav-icon4.open {
-  margin-left: -75px;
-  background-color: var(--fifthColor);
-  padding: 30px;
-} */
 
 #nav-icon4 span:nth-child(2):hover {
   background-color: var(--fourthColor);
