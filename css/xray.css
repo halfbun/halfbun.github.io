@@ -1,0 +1,28 @@
+#real {
+  position: relative;
+  background: url("../img/bg/selfie-res.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+#cartoon {
+  /* width: 100%; */
+  transition: opacity 0.6s ease-out;
+  -webkit-mask-image: url("../img/bg/p5.png");
+  mask-image: url("../img/bg/p5.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 200%;
+  mask-size: 200%;
+  cursor: none;
+}
+
+.inactive {
+  opacity: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

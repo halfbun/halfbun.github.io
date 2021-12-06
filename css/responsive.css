@@ -1,0 +1,80 @@
+/* tampilan tablet */
+@media screen and (max-width: 768px) {
+  #home h1 {
+    font-size: 2.2rem;
+  }
+  #home p {
+    font-size: 0.9rem;
+  }
+
+  .btn-custom1 {
+    width: 50%;
+  }
+
+  #about p {
+    text-align: justify !important;
+  }
+
+  #skill img {
+    width: 8%;
+  }
+
+  #skill .card {
+    margin-top: 20px;
+  }
+  hr {
+    width: 20%;
+  }
+
+  .social-icon {
+    display: none;
+    margin-right: 0.7em;
+    margin-bottom: 10px;
+  }
+}
+
+/* tampilan smartphone */
+@media screen and (max-width: 428px) {
+  hr {
+    width: 30%;
+  }
+
+  #resume p,
+  h1 {
+    font-size: 0.7rem;
+  }
+
+  .gallery {
+    margin-bottom: 10px;
+  }
+
+  #sideNav::after {
+    display: none;
+  }
+
+  #project {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .toggleSide {
+    display: none;
+  }
+
+  #skill img {
+    width: 14%;
+    margin: 5px;
+  }
+
+  #skill .card p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  #project .card {
+    display: inline;
+  }
+
+  .btn-custom1 {
+    width: 100%;
+  }
+}
