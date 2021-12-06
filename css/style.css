@@ -183,6 +183,7 @@ footer {
   background: url("../img/bg/background.jpg") center;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -585,14 +586,18 @@ hr {
 #footer p,
 h3,
 h4,
-h5,
-a {
+h5 {
   text-decoration: none;
   color: var(--fourthColor);
 }
 
 #footer a:hover {
   color: var(--accent);
+}
+
+#footer a {
+  text-decoration: underline;
+  color: var(--fourthColor);
 }
 
 #footer img {
@@ -610,6 +615,10 @@ a {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   fill: var(--accent);
+}
+
+.contact-email {
+  text-align: end;
 }
 
 .copyright {

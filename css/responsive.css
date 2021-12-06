@@ -6,7 +6,9 @@
   #home p {
     font-size: 0.9rem;
   }
-
+  #home h4 {
+    font-size: 0.9rem;
+  }
   .btn-custom1 {
     width: 50%;
   }
@@ -24,12 +26,6 @@
   }
   hr {
     width: 20%;
-  }
-
-  .social-icon {
-    display: none;
-    margin-right: 0.7em;
-    margin-bottom: 10px;
   }
 }
 
@@ -62,11 +58,11 @@
 
   #skill img {
     width: 14%;
-    margin: 5px;
+    margin: 15px;
   }
 
   #skill .card p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: center;
   }
 
@@ -75,6 +71,86 @@
   }
 
   .btn-custom1 {
-    width: 100%;
+    width: 50%;
+  }
+
+  /* baru */
+
+  #resume {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-size: 50%;
+  }
+
+  #skill .card {
+    height: 320px;
+  }
+
+  #skill .card img {
+    width: 30%;
+  }
+
+  #certificate img {
+    width: 49%;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  #about p {
+    font-size: 0.7rem;
+  }
+  #about h5 {
+    font-size: 0.9rem;
+  }
+
+  #loader {
+    background-size: 60%;
+  }
+
+  #loader-wrapper .loader-section {
+    background-size: 60%;
+  }
+
+  #about {
+    background-size: 60%;
+  }
+
+  #footer h4,
+  a {
+    text-align: center;
+  }
+
+  #footer h4 {
+    font-size: 0.9rem;
+  }
+
+  #footer a {
+    text-decoration: underline;
+  }
+
+  #footer svg {
+    justify-content: center;
+  }
+
+  .contact-email {
+    text-align: center;
+  }
+
+  .contact-icon {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #project {
+    background-attachment: fixed;
+    background-size: 150%;
+  }
+
+  #certificate {
+    background-size: 200%;
+  }
+
+  #sideNav li > a {
+    font-size: 1.5rem;
   }
 }
