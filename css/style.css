@@ -459,6 +459,14 @@ hr {
 #project .gallery img {
   border: 3px solid rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+#project .gallery {
+  height: 300px;
+  width: 300px;
 }
 
 #project .row > * {
@@ -474,6 +482,22 @@ hr {
   padding-bottom: 60px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+.site-ref {
+  background-color: var(--fourthColor);
+  border: solid 3px var(--fontblack);
+  color: var(--mainColor);
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.site-ref:hover {
+  background-color: var(--accent);
+  border: none;
+  color: var(--fourthColor);
 }
 /* end project section */
 
@@ -549,7 +573,7 @@ hr {
 }
 
 .content .content-overlay {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   height: 99%;
   width: 100%;
