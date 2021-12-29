@@ -32,5 +32,9 @@ AOS.init({
 });
 
 // Animasi GSAP
+
+// preloading screen
 gsap.registerPlugin(TextPlugin);
-gsap.to(".type", { duration: 2.5, text: "Hello, there!_" });
+$(document).ready(function () {
+  gsap.to(".type", { duration: 2.5, delay: 3, text: "Hello, there!_" });
+});

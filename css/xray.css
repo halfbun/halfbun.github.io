@@ -14,7 +14,8 @@
   mask-repeat: no-repeat;
   -webkit-mask-size: 200%;
   mask-size: 200%;
-  cursor: none;
+  cursor: default;
+  z-index: 9999;
 }
 
 .inactive {
