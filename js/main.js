@@ -46,3 +46,16 @@ $(function smoothnav() {
     event.preventDefault();
   });
 });
+
+$(".site-ref").click(function (event) {
+  // do interesting things
+  return false;
+});
+
+// jumping text
+const heading = document.querySelector(".jump");
+heading.innerHTML = sparanWrap(heading.textContent);
+
+function sparanWrap(word) {
+  return [...word].map((letter) => `<span>${letter}</span>`).join("");
+}

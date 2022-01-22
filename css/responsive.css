@@ -79,6 +79,21 @@
     width: 50%;
   }
 
+  .cert-link {
+    width: 100%;
+    border: solid 3px white;
+    border-radius: 10px;
+  }
+
+  .cv-download {
+    margin: 10px auto;
+
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+  }
+
   /* baru */
 
   #resume {
