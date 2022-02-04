@@ -326,7 +326,8 @@ hr {
   color: var(--fontblack);
   padding-top: 60px;
   padding-bottom: 40px;
-  background: url(../img/bg/figure.png) var(--secondaryColor);
+  /* background: url(../img/bg/figure.png) var(--secondaryColor); */
+  background: var(--secondaryColor);
   background-attachment: scroll;
   background-size: 30%;
   background-position: right bottom;
