@@ -160,12 +160,20 @@
   }
 
   #skill .card {
-    height: 320px;
+    height: 300px;
+  }
+
+  #skill .card h3 {
+    font-size: 1.5rem;
+  }
+
+  #skill .card-title h3 {
+    height: 3rem;
   }
 
   #skill .card img {
-    width: 30%;
-    margin: 10px;
+    width: 50%;
+    margin: 0px;
   }
 
   #about h1 {
@@ -185,12 +193,16 @@
   }
 
   #skill .card-tool {
-    width: 140px;
-    height: 140px;
+    width: 90px;
+    height: 90px;
   }
 
   #skill .card-desc {
-    width: 140px;
+    width: 90px;
+  }
+
+  #skill .card-desc h5 {
+    font-size: 0.8rem;
   }
 
   #skill .card-tool img {
@@ -235,5 +247,10 @@
 
   #project h1 {
     font-size: 2.5rem;
+  }
+
+  .main-logo img {
+    height: 100px;
+    width: 100px !important;
   }
 }

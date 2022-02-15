@@ -447,6 +447,11 @@ hr {
   background-color: var(--secondaryColor);
 }
 
+#skill .card-title h3 {
+  height: 4rem;
+  line-height: 4rem;
+}
+
 #skill .skill-content {
   margin-top: 30px;
 }
