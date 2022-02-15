@@ -17,8 +17,8 @@
     text-align: justify !important;
   }
 
-  #skill img {
-    width: 8%;
+  #about {
+    padding-top: 30px;
   }
 
   #skill .card {
@@ -39,9 +39,8 @@
     font-size: 1.9rem;
   }
 
-  #resume p,
-  h1 {
-    font-size: 0.7rem;
+  #resume h1 {
+    font-size: 2.5rem;
   }
 
   .gallery {
@@ -102,20 +101,6 @@
     background-size: 50%;
   }
 
-  #skill .card {
-    height: 320px;
-  }
-
-  #skill .card img {
-    width: 30%;
-  }
-
-  #certificate img {
-    width: 49%;
-    padding: 2px;
-    border-radius: 5px;
-  }
-
   #about p {
     font-size: 0.7rem;
   }
@@ -172,5 +157,83 @@
 
   #sideNav li > a {
     font-size: 1.5rem;
+  }
+
+  #skill .card {
+    height: 320px;
+  }
+
+  #skill .card img {
+    width: 30%;
+    margin: 10px;
+  }
+
+  #about h1 {
+    font-size: 2.5rem;
+  }
+
+  #skill .card p {
+    font-size: 0.9rem;
+  }
+
+  #skill h1 {
+    font-size: 2.5rem;
+  }
+
+  #skill .tools {
+    margin-bottom: 0px;
+  }
+
+  #skill .card-tool {
+    width: 140px;
+    height: 140px;
+  }
+
+  #skill .card-desc {
+    width: 140px;
+  }
+
+  #skill .card-tool img {
+    width: 60%;
+    padding: 0px;
+  }
+
+  #certificate h1 {
+    font-size: 2.5rem;
+  }
+
+  .cert-link {
+    width: 100%;
+  }
+
+  #certificate img {
+    width: 49%;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  #about p {
+    font-size: 0.9rem;
+  }
+
+  #about h5 {
+    font-size: 1.2rem;
+  }
+
+  #resume .resume-item {
+    margin-bottom: 50px;
+  }
+
+  #resume .resume-item h4 {
+    font-size: 1.3rem;
+  }
+
+  #resume .resume-item li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  #project h1 {
+    font-size: 2.5rem;
   }
 }

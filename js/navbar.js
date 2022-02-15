@@ -10,6 +10,14 @@ if (window.innerWidth < 900) {
   });
 }
 
+if (window.innerWidth > 800 && $(document).ready()) {
+  $("#sideNav").addClass("active");
+  $("#circleBase").addClass("active");
+  $("section").addClass("active");
+  $("footer").addClass("active");
+  $("#nav-icon4").addClass("open");
+}
+
 // toggle active class sidenav
 $(document).ready(function () {
   $("#nav-icon4").on("click", function () {
