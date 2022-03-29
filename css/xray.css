@@ -12,8 +12,8 @@
   mask-image: url("../img/bg/p5.png");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: 200%;
-  mask-size: 200%;
+  -webkit-mask-size: 150%;
+  mask-size: 150%;
   cursor: default;
   z-index: 9999;
 }

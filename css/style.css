@@ -117,7 +117,7 @@ footer {
   z-index: -1;
   /* border: #fff solid 3px; */
   background: url(../img/bg/geo.png);
-  background-size: 200%;
+  background-size: 250%;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -520,11 +520,12 @@ hr {
 
 /* project section */
 #project {
-  background: url(../img/bg/geo.png) var(--secondaryColor);
+  background: url(../img/bg/test.png) var(--fourthColor);
   background-attachment: fixed;
-  background-size: 100%;
-  background-position: top center;
+  background-size: 60%;
+  background-position: center;
   background-repeat: no-repeat;
+  padding-inline: none !important;
 }
 
 #project img {
@@ -643,16 +644,20 @@ hr {
 
 .project-card {
   padding: 5px !important;
+
+  filter: drop-shadow(0px 0px 5px var(--fontblack));
 }
 
 .pro-card {
   border-radius: 5px;
   background: var(--fourthColor);
+  width: 370px;
+  margin: 10px;
   padding: 10px;
 }
 
 .project-card:hover {
-  filter: drop-shadow(0px 0px 10px var(--fourthColor));
+  filter: drop-shadow(0px 0px 10px var(--fontblack));
 }
 
 .project-card img {
@@ -1098,7 +1103,7 @@ footer.active {
 #loader-wrapper .loader-section {
   position: fixed;
   top: 0;
-  width: 51%;
+  width: 100%;
   height: 100%;
   background: url(../img/preload/clock.png) var(--accent);
   background-attachment: fixed;
