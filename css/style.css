@@ -215,7 +215,7 @@ footer {
 } */
 
 .main-logo img {
-  height: 150px;
+  /* height: 150px; */
   width: 150px !important;
   margin-bottom: 20px;
 }
@@ -871,7 +871,7 @@ h5 {
 
 #footer a {
   font-size: 1.2rem;
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--secondaryColor);
 }
 
@@ -894,6 +894,10 @@ h5 {
 
 .contact-email {
   text-align: end;
+}
+
+#footer .contact-email a {
+  text-decoration: underline;
 }
 
 .copyright p {
