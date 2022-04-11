@@ -115,11 +115,14 @@ footer {
   right: 0;
   position: absolute;
   z-index: -1;
-  /* border: #fff solid 3px; */
   background: url(../img/bg/geo.png);
   background-size: 250%;
   background-position: right bottom;
   background-repeat: no-repeat;
+  /* background: url(../img/bg/fibo3.png);
+  background-size: 155%;
+  background-position: center bottom;
+  background-repeat: no-repeat; */
 }
 
 @media (min-width: 768px) {
@@ -178,6 +181,12 @@ footer {
   /* color: #ae8be4; */
 }
 
+/* home section */
+.color-sec {
+  color: var(--secondaryColor);
+  /* color: #ae8be4; */
+}
+
 .transparent {
   color: transparent;
   /* color: #ae8be4; */
@@ -216,8 +225,8 @@ footer {
 
 .main-logo img {
   /* height: 150px; */
-  width: 150px !important;
-  margin-bottom: 20px;
+  width: 120px !important;
+  margin-bottom: 10px;
 }
 
 #home:after {
@@ -228,14 +237,17 @@ footer {
   bottom: 0px;
   right: 0px;
   z-index: -1;
-  background: linear-gradient(45deg, var(--secondaryColor), #3e1479, #3e1479, var(--secondaryColor));
+  /* background: linear-gradient(45deg, var(--secondaryColor), #3e1479, #3e1479, var(--secondaryColor));
   background-size: 400% 400%;
-  animation: gradient 6s ease infinite;
+  animation: gradient 6s ease infinite; */
+  background: url(../img/bg/bg-home.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
 #home h1 {
-  font-size: 3.5rem;
+  font-size: 4.2rem;
 }
 
 .border-text {
@@ -324,14 +336,13 @@ hr {
 
 #about {
   min-height: 300px;
-  /* background-color: var(--fourthColor); */
   color: var(--fontblack);
   padding-top: 60px;
   padding-bottom: 40px;
-  /* background: url(../img/bg/figure.png) var(--secondaryColor); */
+  /* background: url(../img/icon/logo.png); */
   background: var(--secondaryColor);
   background-attachment: scroll;
-  background-size: 30%;
+  background-size: 100%;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -522,7 +533,7 @@ hr {
 #project {
   background: url(../img/bg/test.png) var(--fourthColor);
   background-attachment: fixed;
-  background-size: 60%;
+  background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
   padding-inline: none !important;
@@ -683,8 +694,9 @@ hr {
 
 .project-card h3 {
   text-decoration: none;
+  font-size: 1.2rem;
   color: var(--fontblack);
-  font-weight: bold;
+  /* font-weight: bolder; */
 }
 
 .project-card button {
@@ -789,6 +801,7 @@ hr {
 .content {
   position: relative;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .content .content-overlay {
