@@ -33,7 +33,7 @@ AOS.init({
 
 // Animasi GSAP
 
-// preloading screen
+// preloading text
 gsap.registerPlugin(TextPlugin);
 $(document).ready(function () {
   gsap.to(".type", { duration: 2.5, delay: 3, text: "Hello, there!_" });

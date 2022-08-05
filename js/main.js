@@ -2,7 +2,12 @@
 $(document).ready(function () {
   setTimeout(function () {
     $("body").addClass("loaded");
-  }, 3000);
+    // $("#sideNav").addClass("active");
+    // $("#circleBase").addClass("active");
+    // $("section").addClass("active");
+    // $("footer").addClass("active");
+    // $("#nav-icon4").addClass("open");
+  }, 1500);
 });
 
 // smooth scroll chrome

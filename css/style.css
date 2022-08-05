@@ -116,7 +116,7 @@ footer {
   position: absolute;
   z-index: -1;
   background: url(../img/bg/geo.png);
-  background-size: 250%;
+  background-size: cover;
   background-position: right bottom;
   background-repeat: no-repeat;
   /* background: url(../img/bg/fibo3.png);
@@ -150,6 +150,7 @@ footer {
     margin: auto auto 0;
   }
   #sideNav .navbar-collapse {
+    /* position: relative; */
     display: flex;
     align-items: flex-start;
     flex-grow: 0;
@@ -240,8 +241,9 @@ footer {
   /* background: linear-gradient(45deg, var(--secondaryColor), #3e1479, #3e1479, var(--secondaryColor));
   background-size: 400% 400%;
   animation: gradient 6s ease infinite; */
-  background: url(../img/bg/bg-home.jpg);
-  background-size: 104%;
+  background: url(../img/bg/bg-home.jpg) center;
+  background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -447,6 +449,7 @@ hr {
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
+  margin-top: 30px;
 }
 
 #skill .card img {
@@ -1078,21 +1081,6 @@ footer.active {
   z-index: 9999;
 }
 
-#loader {
-  background: url(../img/preload/clockhand.png);
-  background-attachment: fixed;
-  background-size: 30%;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: spin1 5s linear infinite;
-  animation: spin1 5s linear infinite;
-  z-index: 9999;
-}
-
 @-webkit-keyframes spin1 {
   0% {
     -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
@@ -1118,12 +1106,63 @@ footer.active {
   }
 }
 
+.lds-ripple {
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 72px;
+    left: 72px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 72px;
+    left: 72px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 72px;
+    left: 72px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 144px;
+    height: 144px;
+    opacity: 0;
+  }
+}
+
 #loader-wrapper .loader-section {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(../img/preload/clock.png) var(--accent);
+  background-color: var(--accent);
   background-attachment: fixed;
   background-size: 30%;
   background-position: center;
@@ -1134,32 +1173,7 @@ footer.active {
   transform: translateX(0); /* Firefox 16+, IE 10+, Opera */
 }
 
-#loader-wrapper .loader-section.section-left {
-  left: 0;
-}
-
-#loader-wrapper .loader-section.section-right {
-  right: 0;
-}
-
 /* Loaded */
-.loaded #loader-wrapper .loader-section.section-left {
-  -webkit-transform: translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(-100%); /* IE 9 */
-  transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
-
-  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader-wrapper .loader-section.section-right {
-  -webkit-transform: translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(100%); /* IE 9 */
-  transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
-
-  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
 .loaded #loader {
   opacity: 0;
@@ -1169,12 +1183,12 @@ footer.active {
 .loaded #loader-wrapper {
   visibility: hidden;
 
-  -webkit-transform: translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateY(-100%); /* IE 9 */
-  transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
+  -webkit-transform: translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(100%); /* IE 9 */
+  transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
 
-  -webkit-transition: all 0.3s 1s ease-out;
-  transition: all 0.3s 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 /* preloader page */

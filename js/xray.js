@@ -3,7 +3,6 @@ $(document).ready(function () {
   $("#real").mousemove(function (e) {
     currentMousePos.x = e.pageX;
     currentMousePos.y = e.pageY;
-
     $("#cartoon").css("-webkit-mask-position-x", currentMousePos.x - 170);
     $("#cartoon").css("-webkit-mask-position-y", currentMousePos.y - 220);
   });
