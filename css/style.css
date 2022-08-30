@@ -64,7 +64,7 @@ footer {
   font-weight: 700;
 }
 .nav-link:hover {
-  color: var(--secondaryColor) !important;
+  color: var(--mainColor) !important;
   font-weight: 700;
 }
 
